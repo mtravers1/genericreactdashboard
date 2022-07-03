@@ -10,12 +10,16 @@ const initialState = {
 
 export const ContextProvider = ({ children }) => {
   const [activeMenu, setActiveMenu] = useState(true);
-
+  const [isClicked, setIsClicked] = useState(initialState);
+  const handleClick = (clicked) => setIsClicked({ ...initialState, [clicked]: true });
+  
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
     <StateContext.Provider value={{ 
         activeMenu,
-        setActiveMenu
+        setActiveMenu,
+        handleClick,
+        isClicked
     }}>
         {children}
     </StateContext.Provider>
