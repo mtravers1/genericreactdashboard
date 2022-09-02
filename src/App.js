@@ -61,7 +61,7 @@ const App = () => {
               <Navbar />
             </div>
             <div>
-              {themeSettings && (<ThemeSettings />)}
+              {/* {themeSettings && (<ThemeSettings />)} */}
 
               <Routes>
                 {/* dashboard  */}
@@ -91,7 +91,7 @@ const App = () => {
 
               </Routes>
             </div>
-            <Footer />
+            
           </div>
         </div>
       </BrowserRouter>
