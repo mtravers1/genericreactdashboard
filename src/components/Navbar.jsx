@@ -36,6 +36,7 @@ const Navbar = () => {
     isClicked,
     setScreenSize,
     screenSize,
+    currentContext
   } = useStateContext();
 
   useEffect(() => {
